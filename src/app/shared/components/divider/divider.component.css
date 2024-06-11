@@ -1,0 +1,5 @@
+.divider{
+  background: linear-gradient(-90deg,var(--colorQuinary),var(--colorSenary));
+
+  height: .15rem;
+}

@@ -1,0 +1,19 @@
+#competitiveEdgesSection {
+  background-color: var(--colorOctary);
+
+  color: var(--colorPrimary);
+
+  & i {
+    font-size: 350%;
+
+    margin-bottom: 1rem;
+  }
+
+  & li {
+    width: 20%;
+
+    & > p:first-of-type {
+      font-weight: bold;
+    }
+  }
+}

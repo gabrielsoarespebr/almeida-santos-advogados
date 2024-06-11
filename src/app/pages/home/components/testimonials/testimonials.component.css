@@ -1,0 +1,14 @@
+#testimonials {
+  background-color: var(--colorTertiary);
+}
+
+iframe {
+  width: 100%;
+  height: 45vh;
+
+  background-color: var(--colorOctary);
+
+  padding: 5vh;
+
+  border-radius: var(--borderRounded);
+}

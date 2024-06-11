@@ -1,0 +1,23 @@
+a {
+  width: fit-content;
+
+  margin: auto;
+
+  background-color: var(--colorQuinary);
+  color: var(--colorPrimary);
+
+  padding: 0.7rem 3.5rem;
+
+  border-radius: var(--borderRounded) 0 var(--borderRounded) 0;
+
+  text-decoration: none;
+  font-style: italic;
+
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    background-color: var(--colorSenary);
+
+    box-shadow: 0 0 13px var(--colorSenary);
+  }
+}

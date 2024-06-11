@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* RESET CSS */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* GLOBAL VARIABLES */
+:root {
+  --colorPrimary: #1e376d;
+  --colorSecondary: #112a5f;
+  --colorTertiary: #132345;
+  --colorQuaternary: #8c1c40;
+  --colorQuinary: #fcbf02;
+  --colorSenary: #ff8f27;
+  --colorSeptenary: #9f5b01;
+  --colorOctary: #f5f7fa;
+
+  --borderRounded: 0.8rem;
+}
+
+/* CUSTOM CSS */
+body {
+  font-family: "Mulish", sans-serif !important;
+  font-size: 1.2rem !important;
+}
+
+.textHighlight {
+  color: var(--colorQuinary);
+
+  font-weight: bold;
+}
+
+.titleHr {
+  background: linear-gradient(-90deg, var(--colorQuinary),var(--colorSenary));
+
+  color: transparent;
+  opacity: 1;
+  width: 18vw;
+  height: 0.1rem;
+}

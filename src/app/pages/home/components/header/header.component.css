@@ -1,0 +1,15 @@
+#header {
+  background-color: var(--colorTertiary);
+  position: sticky;
+  top:0;
+
+  z-index: 99;
+
+  &>div{
+    width: 50%;
+  }
+}
+
+.logotipo {
+  width: 8%;
+}
