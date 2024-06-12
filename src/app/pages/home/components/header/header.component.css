@@ -1,11 +1,14 @@
 #header {
-  background-color: var(--colorTertiary);
   position: sticky;
-  top:0;
+  top: 0;
+
+  height: 10vh;
 
   z-index: 99;
 
-  &>div{
+  transition: ease-in-out 0.5s;
+
+  & > div {
     width: 50%;
   }
 }

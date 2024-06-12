@@ -1,4 +1,7 @@
 .banner {
+  margin-top: -10vh;
+
+  padding-top: 10vh;
   background-image: url("../../../../../assets/images/bannerBackground.png");
   background-size: cover;
   background-repeat: no-repeat;

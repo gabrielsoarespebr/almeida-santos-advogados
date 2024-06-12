@@ -1,21 +1,27 @@
 <header
   id="header"
   class="d-flex justify-content-around align-items-center text-white py-3 px-5"
+  [style.background-color]="backgroundColorOn? '#132345':'transparent'"
 >
-  <div class="d-flex align-items-center gap-4">
-    <img
-      class="logotipo"
-      src="../../../../../assets/images/logoBranca.png"
-      alt="Logotipo Almeida Santos Advogados"
-    />
-    <h1 class="fs-2">Almeida Santos Advogados</h1>
-  </div>
+  <a
+    href="#banner"
+    class="text-reset text-decoration-none"
+  >
+    <div class="d-flex align-items-center gap-4">
+      <img
+        class="logotipo"
+        src="../../../../../assets/images/logoBranca.png"
+        alt="Logotipo Almeida Santos Advogados"
+      />
+      <h1 class="fs-2">Almeida Santos Advogados</h1>
+    </div>
+  </a>
 
   <nav>
     <ul class="m-0 list-unstyled d-flex align-items-center gap-5">
       <li>
         <a href="#testimonials" class="text-decoration-none text-white"
-          >Clientes satisfeitos</a
+          >Depoimentos</a
         >
       </li>
       <li>
@@ -24,14 +30,13 @@
         >
       </li>
       <li>
-        <a href="#about" class="text-decoration-none text-white"
-          >Sobre</a
-        >
+        <a href="#cta" class="text-decoration-none text-white">Sobre</a>
       </li>
       <li>
-        <a href="#contact" class="text-decoration-none text-white"
-          >Contato</a
-        >
+        <a href="#faq" class="text-decoration-none text-white">FAQ</a>
+      </li>
+      <li>
+        <a href="#footer" class="text-decoration-none text-white">Contato</a>
       </li>
     </ul>
   </nav>
