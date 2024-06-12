@@ -5,11 +5,12 @@ import { BannerComponent } from './components/banner/banner.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { CompetitiveEdgesComponent } from './components/competitive-edges/competitive-edges.component';
 import { LegalServicesComponent } from './components/legal-services/legal-services.component';
+import { CtaComponent } from './components/cta/cta.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent,DividerComponent,BannerComponent,TestimonialsComponent,CompetitiveEdgesComponent,LegalServicesComponent],
+  imports: [HeaderComponent,DividerComponent,BannerComponent,TestimonialsComponent,CompetitiveEdgesComponent,LegalServicesComponent,CtaComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

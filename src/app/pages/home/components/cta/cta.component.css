@@ -1,0 +1,22 @@
+#cta {
+  background-image: url("../../../../../assets/images/ctaBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  & img {
+    width: 35vw;
+
+    vertical-align: bottom;
+
+    filter: drop-shadow(0 0 20px var(--colorTertiary));
+  }
+
+  & li {
+    background-color: var(--colorSecondary);
+
+    padding: 0.4rem 0.6rem;
+
+    border-radius: var(--borderRounded);
+  }
+}
