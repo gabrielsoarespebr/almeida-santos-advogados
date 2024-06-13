@@ -1,0 +1,9 @@
+#footer {
+  background-color: var(--colorTertiary);
+
+  & img {
+    width: 12vw;
+
+    object-fit: contain;
+  }
+}

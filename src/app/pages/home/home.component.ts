@@ -7,14 +7,23 @@ import { CompetitiveEdgesComponent } from './components/competitive-edges/compet
 import { LegalServicesComponent } from './components/legal-services/legal-services.component';
 import { CtaComponent } from './components/cta/cta.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent,DividerComponent,BannerComponent,TestimonialsComponent,CompetitiveEdgesComponent,LegalServicesComponent,CtaComponent,FaqComponent],
+  imports: [
+    HeaderComponent,
+    DividerComponent,
+    BannerComponent,
+    TestimonialsComponent,
+    CompetitiveEdgesComponent,
+    LegalServicesComponent,
+    CtaComponent,
+    FaqComponent,
+    FooterComponent,
+  ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}
