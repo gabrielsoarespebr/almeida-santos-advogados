@@ -1,0 +1,15 @@
+#faq {
+  background-color: var(--colorOctary);
+
+  color: var(--colorPrimary);
+
+  & summary{
+    font-weight: bold;
+  }
+
+  & img{
+    object-fit: contain;
+
+    width: 32vw;
+  }
+}

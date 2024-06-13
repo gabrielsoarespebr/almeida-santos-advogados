@@ -9,7 +9,7 @@
 
     vertical-align: bottom;
 
-    filter: drop-shadow(0 0 20px var(--colorTertiary));
+    /* filter: drop-shadow(0 0 20px var(--colorTertiary)); */
   }
 
   & li {
