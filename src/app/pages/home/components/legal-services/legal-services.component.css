@@ -7,6 +7,8 @@
   color: var(--colorPrimary);
 
   & img {
+    object-fit: cover;
+
     width: 35vw;
     border-radius: var(--borderRounded);
 
