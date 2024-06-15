@@ -19,14 +19,25 @@
       from(rgba(0, 0, 0, 1)) 50%,
       to(rgba(0, 0, 0, 0))
     );
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0)
+    );
   }
 
   & li {
-    background-color: var(--colorSecondary);
-
+    text-align: center;
+    width: 30%;
     padding: 0.4rem 0.6rem;
 
+    background-color: var(--colorSecondary);
     border-radius: var(--borderRounded);
+
+    & i {
+      font-size: 200%;
+
+      margin: 3vh 0;
+    }
   }
 }
