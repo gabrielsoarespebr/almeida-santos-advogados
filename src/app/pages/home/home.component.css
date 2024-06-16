@@ -1,8 +1,8 @@
 #whatsappFixedIcon {
   position: fixed;
 
-  right: 2rem;
-  bottom: 2rem;
+  right: 2.1rem;
+  bottom: 1.4rem;
 
   font-size: 3.5rem;
 
@@ -23,4 +23,20 @@
 
     transform: scale(1.1);
   }
+}
+
+#whatsappFixedIcon:after {
+  content: "1";
+  background-color: #fd3d31;
+
+  border-radius: 50%;
+
+  padding: 0.6rem 0.8rem;
+
+  font-size: 25%;
+
+  position: absolute;
+
+  top: -0.8vh;
+  right: -0.8vw;
 }
