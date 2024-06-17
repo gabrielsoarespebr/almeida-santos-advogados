@@ -44,10 +44,20 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   #legalServices > div {
     flex-direction: column;
 
+    & > img {
+      width: 70%;
+
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #legalServices > div {
     & li {
       width: 100%;
     }

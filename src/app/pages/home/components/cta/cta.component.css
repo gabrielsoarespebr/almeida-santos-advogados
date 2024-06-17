@@ -4,6 +4,12 @@
   background-repeat: no-repeat;
   background-position: bottom;
 
+  gap: 3vw;
+
+  &>div{
+    margin-bottom: 6vh;
+  }
+
   & img {
     object-fit: contain;
 
@@ -18,6 +24,23 @@
     padding: 0.4rem 0.6rem;
 
     border-radius: var(--borderRounded);
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  #cta {
+    flex-direction: column-reverse;
+    gap: 0;
+
+    &>div{
+      margin-bottom: 0;
+    }
+
+    & img {
+      width: 60%;
+
+      margin: auto;
+    }
   }
 }
 
