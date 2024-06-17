@@ -13,3 +13,11 @@
     width: 32vw;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #faq img{
+    width: 80%;
+
+    margin: auto;
+  }
+}
