@@ -54,12 +54,6 @@
         border-bottom: 1.5px solid var(--colorPrimary);
       }
 
-      & li:last-of-type > a {
-        padding-bottom: 0;
-
-        border-bottom: 0;
-      }
-
       & .show {
         background-color: var(--colorQuinary);
 
@@ -69,6 +63,14 @@
         border: 1.5px solid var(--colorPrimary);
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #header ul > li:last-of-type > a {
+    padding-bottom: 0;
+
+    border-bottom: 0;
   }
 }
 
