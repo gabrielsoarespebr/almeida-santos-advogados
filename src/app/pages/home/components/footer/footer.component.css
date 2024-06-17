@@ -7,3 +7,20 @@
     object-fit: contain;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #footer {
+    & img {
+      width: 70%;
+      margin: auto;
+    }
+
+    & div {
+      text-align: center;
+
+      & a {
+        justify-content: center;
+      }
+    }
+  }
+}
