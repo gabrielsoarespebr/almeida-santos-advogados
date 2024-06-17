@@ -8,11 +8,74 @@
 
   transition: ease-in-out 0.5s;
 
-  & > div {
-    width: 50%;
+  & > nav {
+    & button {
+      background-color: var(--colorQuinary);
+    }
+
+    & li > a {
+      color: white;
+
+      font-weight: 500;
+    }
   }
 }
 
 .logotipo {
   height: 7vh;
+}
+
+@media screen and (max-width: 1200px) {
+  #header {
+    & nav {
+      width: min-content;
+
+      & button {
+        font-size: 80%;
+      }
+
+      & > div {
+        position: absolute;
+        top: -1.2vh;
+        right: 10vw;
+      }
+
+      & ul {
+        display: flex;
+      }
+
+      & li > a {
+        font-size: 80%;
+
+        color: var(--colorPrimary);
+
+        padding: 0.5rem 0.8rem 0.4rem 0.8rem;
+
+        border-bottom: 1.5px solid var(--colorPrimary);
+      }
+
+      & li:last-of-type > a {
+        padding-bottom: 0;
+
+        border-bottom: 0;
+      }
+
+      & .show {
+        background-color: var(--colorQuinary);
+
+        border-radius: 0 var(--borderRounded) var(--borderRounded)
+          var(--borderRounded);
+
+        border: 1.5px solid var(--colorPrimary);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    & h1 {
+      display: none;
+    }
+  }
 }

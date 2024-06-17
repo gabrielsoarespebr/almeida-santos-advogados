@@ -1,12 +1,9 @@
 <header
   id="header"
   class="d-flex justify-content-around align-items-center text-white py-3 px-5"
-  [style.background-color]="backgroundColorOn? '#132345':'transparent'"
+  [style.background-color]="backgroundColorOn ? '#132345' : 'transparent'"
 >
-  <a
-    href="#banner"
-    class="text-reset text-decoration-none"
-  >
+  <a href="#banner" class="text-reset text-decoration-none">
     <div class="d-flex align-items-center gap-4">
       <img
         class="logotipo"
@@ -17,7 +14,42 @@
     </div>
   </a>
 
-  <nav>
+  <nav class="navbar navbar-expand-xl">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#legalServices">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cta">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <nav>
     <ul class="m-0 list-unstyled d-flex align-items-center gap-5">
       <li>
         <a href="#testimonials" class="text-decoration-none text-white"
@@ -39,5 +71,5 @@
         <a href="#footer" class="text-decoration-none text-white">Contato</a>
       </li>
     </ul>
-  </nav>
+  </nav> -->
 </header>
