@@ -37,10 +37,28 @@ body {
 }
 
 .titleHr {
-  background: linear-gradient(-90deg, var(--colorQuinary),var(--colorSenary));
+  background: linear-gradient(-90deg, var(--colorQuinary), var(--colorSenary));
 
   color: transparent;
   opacity: 1;
   width: 18vw;
   height: 0.1rem;
+}
+
+.sectionTitle {
+  font-size: calc(1.325rem + 0.9vw);
+
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 1.9rem;
+
+    font-weight: 600;
+  }
+
+  .titleHr {
+    width: 36vw;
+  }
 }
