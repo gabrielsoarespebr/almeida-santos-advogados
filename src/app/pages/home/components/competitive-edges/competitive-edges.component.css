@@ -17,3 +17,14 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  #competitiveEdgesSection ul {
+    flex-direction: column;
+    gap: 4vh;
+
+    & li {
+      width: 100%;
+    }
+  }
+}

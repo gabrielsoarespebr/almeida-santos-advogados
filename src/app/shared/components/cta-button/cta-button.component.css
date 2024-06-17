@@ -15,9 +15,27 @@ a {
 
   transition: ease-in-out 0.5s;
 
+  & > i {
+    font-weight: 600;
+  }
+
   &:hover {
     background-color: var(--colorSenary);
 
     box-shadow: 0 0 13px var(--colorSenary);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a {
+    padding: 0.7rem 1.5rem;
+
+    justify-content: space-between;
+
+    & > i {
+      font-size: 300%;
+
+      font-weight: 400;
+    }
   }
 }
