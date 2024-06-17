@@ -19,6 +19,12 @@ a {
     font-weight: 600;
   }
 
+  & > p {
+    text-align: center;
+
+    font-weight: 700;
+  }
+
   &:hover {
     background-color: var(--colorSenary);
 
@@ -36,6 +42,12 @@ a {
       font-size: 300%;
 
       font-weight: 400;
+    }
+
+    & > p {
+      text-align: center;
+
+      font-weight: 800;
     }
   }
 }

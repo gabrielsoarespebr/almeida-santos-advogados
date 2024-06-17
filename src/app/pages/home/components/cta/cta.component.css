@@ -20,3 +20,9 @@
     border-radius: var(--borderRounded);
   }
 }
+
+@media screen and (max-width: 768px) {
+  #cta img {
+    width: 100%;
+  }
+}
