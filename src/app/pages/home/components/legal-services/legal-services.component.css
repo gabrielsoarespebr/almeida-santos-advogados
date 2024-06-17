@@ -43,3 +43,17 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  #legalServices > div {
+    flex-direction: column;
+
+    & li {
+      width: 100%;
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
