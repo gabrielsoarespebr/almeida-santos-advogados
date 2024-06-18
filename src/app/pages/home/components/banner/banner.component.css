@@ -6,4 +6,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+
+  & > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #banner div {
+    width: 100%;
+  }
 }
