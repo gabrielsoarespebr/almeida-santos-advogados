@@ -1,6 +1,6 @@
 # Almeida Santos Advogados
 
-![Almeida Santos Advogados Mockup](https://postimg.cc/KK1x8KtT)
+![Almeida Santos Advogados Mockup](https://i.postimg.cc/GpQ2zG2X/Almeida-Santos-Advogados-Mockup-1.png)
 
 Site de escritório de advocacia especializado em concursos públicos. Single Page Application (SPA). Identidade visual com o objetivo de transmitir seriedade e confiança.
 
@@ -69,13 +69,12 @@ ng serve -o
 
 ## Mock up
 
-![Almeida Santos Advogados Mockup](https://postimg.cc/7G74SpsY)
-![Almeida Santos Advogados Mockup](https://postimg.cc/7G74SpsY)
-![Almeida Santos Advogados Mockup](https://postimg.cc/1VrZjD1k)
-![Almeida Santos Advogados Brand](https://postimg.cc/G47bRPTr)
-![Almeida Santos Advogados Brand](https://postimg.cc/1gbPn9Kj)
-![Almeida Santos Advogados Brand](https://postimg.cc/Wqvv8XCm)
-![Almeida Santos Advogados Brand](https://postimg.cc/G4hb6g2q)
+![Almeida Santos Advogados Mockup](https://i.postimg.cc/QtYMZDc5/Almeida-Santos-Advogados-Mockup-2.png)
+![Almeida Santos Advogados Mockup](https://i.postimg.cc/d3ztD9HV/Almeida-Santos-Advogados-Mockup-3.png)
+![Almeida Santos Advogados Brand](https://i.postimg.cc/rpcsSQ8d/Almeida-Santos-Advogados-Brand-4.png)
+![Almeida Santos Advogados Brand](https://i.postimg.cc/pTLdSr5R/Almeida-Santos-Advogados-Brand-2.png)
+![Almeida Santos Advogados Brand](https://i.postimg.cc/J0yz1FQF/Almeida-Santos-Advogados-Brand-3.png)
+![Almeida Santos Advogados Brand](https://i.postimg.cc/Bn2tLdG9/Almeida-Santos-Advogados-Brand-1.png)
 
 [Voltar ao sumário](#sumário)
 
