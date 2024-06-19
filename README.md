@@ -71,7 +71,6 @@ ng serve -o
 
 ![Almeida Santos Advogados Mockup](https://i.postimg.cc/QtYMZDc5/Almeida-Santos-Advogados-Mockup-2.png)
 ![Almeida Santos Advogados Mockup](https://i.postimg.cc/d3ztD9HV/Almeida-Santos-Advogados-Mockup-3.png)
-![Almeida Santos Advogados Brand](https://i.postimg.cc/rpcsSQ8d/Almeida-Santos-Advogados-Brand-4.png)
 ![Almeida Santos Advogados Brand](https://i.postimg.cc/pTLdSr5R/Almeida-Santos-Advogados-Brand-2.png)
 ![Almeida Santos Advogados Brand](https://i.postimg.cc/J0yz1FQF/Almeida-Santos-Advogados-Brand-3.png)
 ![Almeida Santos Advogados Brand](https://i.postimg.cc/Bn2tLdG9/Almeida-Santos-Advogados-Brand-1.png)
