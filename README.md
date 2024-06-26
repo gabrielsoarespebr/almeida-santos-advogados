@@ -1,27 +1,88 @@
-# AlmeidaSantosAdvogados
+# Almeida Santos Advogados
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+![Almeida Santos Advogados Mockup](https://i.postimg.cc/GpQ2zG2X/Almeida-Santos-Advogados-Mockup-1.png)
 
-## Development server
+Site de escritório de advocacia especializado em concursos públicos. Single Page Application (SPA). Identidade visual com o objetivo de transmitir seriedade e confiança.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Sumário
 
-## Build
+- [Links](#links)
+- [Execução local](#execução-local)
+- [Tecnologias](#tecnologias)
+- [Mock up](#mock-up)
+- [Sobre o autor](#sobre-o-autor)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Links
 
-## Running end-to-end tests
+- [Site (Opção 1)](https://www.almeiidasantos.com.br)
+- [Site (Opção 2)](https://almeidasantosadvogados.vercel.app)
+- [GitHub](https://github.com/gabrielsoarespebr/almeida-santos-advogados)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[Voltar ao sumário](#sumário)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Execução local
+
+Primeiramente, garanta que o Angular e o npm estão instalados no seu computador.
+
+Em seguida, clone o repositório:
+
+```bash
+git clone https://github.com/gabrielsoarespebr/vera-alencar-psicologia.git
+```
+
+Abra o terminal e instale as dependências:
+
+```bash
+npm i
+```
+
+Agora, execute o script:
+
+```bash
+ng serve -o
+```
+
+[Voltar ao sumário](#sumário)
+
+
+
+## Tecnologias
+
+- Framework: **Angular**
+- Linguagem de programação: **TypeScript**
+- Linguagem de marcação: **HTML**
+- Linguagem de estilização: **CSS**
+- Recursos adicionais:
+  - **Font Awesome**: Importação de ícones
+  - **Google Fonts**: Importação de fontes
+- Controle de versão: **Git**
+
+[Voltar ao sumário](#sumário)
+
+
+
+## Mock up
+
+![Almeida Santos Advogados Mockup](https://i.postimg.cc/QtYMZDc5/Almeida-Santos-Advogados-Mockup-2.png)
+![Almeida Santos Advogados Mockup](https://i.postimg.cc/d3ztD9HV/Almeida-Santos-Advogados-Mockup-3.png)
+![Almeida Santos Advogados Brand](https://i.postimg.cc/pTLdSr5R/Almeida-Santos-Advogados-Brand-2.png)
+![Almeida Santos Advogados Brand](https://i.postimg.cc/J0yz1FQF/Almeida-Santos-Advogados-Brand-3.png)
+![Almeida Santos Advogados Brand](https://i.postimg.cc/Bn2tLdG9/Almeida-Santos-Advogados-Brand-1.png)
+
+[Voltar ao sumário](#sumário)
+
+
+
+## Sobre o autor
+
+- [LinkedIn](https://www.linkedin.com/in/gabrielsoarespebr/)
+- [GitHub](https://github.com/gabrielsoarespebr)
+- [Portfólio](https://gabrielsoares.vercel.app)
+
+[Voltar ao sumário](#sumário)
