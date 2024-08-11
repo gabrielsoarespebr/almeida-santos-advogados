@@ -16,15 +16,41 @@
       font-weight: bold;
     }
   }
+
+  & > div {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  & a img {
+    height: 40vh;
+
+    object-fit: contain;
+
+    border-radius: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #competitiveEdgesSection div img {
+    height: 30vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  #competitiveEdgesSection ul {
+  #competitiveEdgesSection ul,
+  #competitiveEdgesSection div {
     flex-direction: column;
     gap: 4vh;
 
     & li {
       width: 100%;
+    }
+
+    & img{
+      height: auto;
+      width: 80%;
     }
   }
 }
