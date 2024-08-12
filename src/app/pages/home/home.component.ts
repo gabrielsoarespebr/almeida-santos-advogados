@@ -9,6 +9,7 @@ import { CtaComponent } from './components/cta/cta.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsComponent } from './components/news/news.component';
+import { WarningComponent } from './components/warning/warning.component';
 
 @Component({
   selector: 'app-home',
@@ -24,6 +25,7 @@ import { NewsComponent } from './components/news/news.component';
     FaqComponent,
     FooterComponent,
     NewsComponent,
+    WarningComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
