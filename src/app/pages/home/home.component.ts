@@ -8,6 +8,7 @@ import { LegalServicesComponent } from './components/legal-services/legal-servic
 import { CtaComponent } from './components/cta/cta.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NewsComponent } from './components/news/news.component';
 
 @Component({
   selector: 'app-home',
@@ -22,6 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CtaComponent,
     FaqComponent,
     FooterComponent,
+    NewsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

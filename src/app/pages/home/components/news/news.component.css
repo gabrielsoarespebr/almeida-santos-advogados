@@ -1,0 +1,37 @@
+#newsSection {
+  background-color: var(--colorOctary);
+
+  color: var(--colorPrimary);
+
+  & > div {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  & a img {
+    height: 40vh;
+
+    object-fit: contain;
+
+    border-radius: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #newsSection div img {
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #newsSection div {
+    flex-direction: column;
+    gap: 4vh;
+
+    & img {
+      height: auto;
+      width: 80%;
+    }
+  }
+}
