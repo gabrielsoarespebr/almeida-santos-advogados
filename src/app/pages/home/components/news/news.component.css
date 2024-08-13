@@ -18,13 +18,13 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  #newsSection div img {
-    height: 30vw;
+@media screen and (max-width: 1200px) {
+  #newsSection a img {
+    height: 32vh;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   #newsSection div {
     flex-direction: column;
     gap: 4vh;
