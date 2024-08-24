@@ -8,6 +8,8 @@
   background-repeat: no-repeat;
   background-position: right;
 
+  gap: 10vw;
+
   & img {
     object-fit: cover;
 
@@ -34,5 +36,20 @@
 @media screen and (max-width: 1200px) {
   #banner div {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #banner {
+    flex-direction: column-reverse;
+    gap: 0;
+
+    &>div{
+      margin-top: 6vh;
+    }
+
+    &>img{
+      width: 100%;
+    }
   }
 }
