@@ -6,24 +6,38 @@
 
   gap: 3vw;
 
-  &>div{
+  & > div {
     margin-bottom: 6vh;
   }
 
   & img {
-    object-fit: contain;
+    object-fit: cover;
 
-    width: 35vw;
-
-    vertical-align: bottom;
-  }
-
-  & li {
-    background-color: var(--colorSecondary);
-
-    padding: 0.4rem 0.6rem;
-
+    width: 30vw;
     border-radius: var(--borderRounded);
+
+    border: 0.15rem solid var(--colorPrimary);
+
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 1)) 50%,
+      to(rgba(0, 0, 0, 0))
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0)
+    );
+
+    & li {
+      background-color: var(--colorSecondary);
+
+      padding: 0.4rem 0.6rem;
+
+      border-radius: var(--borderRounded);
+    }
   }
 }
 
@@ -32,7 +46,7 @@
     flex-direction: column-reverse;
     gap: 0;
 
-    &>div{
+    & > div {
       margin-bottom: 0;
     }
 

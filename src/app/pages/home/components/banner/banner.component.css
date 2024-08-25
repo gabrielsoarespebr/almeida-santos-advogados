@@ -1,54 +1,38 @@
 #banner {
   margin-top: -10vh;
 
-  padding: 5vw;
+  padding-bottom: 0;
   padding-top: 10vh;
   background-image: url("../../../../../assets/images/bannerBackground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
 
-  gap: 10vw;
+  gap: 3vw;
+
+  & > div {
+    height: 70vh;
+  }
 
   & img {
-    object-fit: cover;
+    width: 50vw;
+    object-fit: contain;
 
-    width: 30vw;
-    border-radius: var(--borderRounded);
-
-    border: 0.15rem solid var(--colorPrimary);
-
-    -webkit-mask-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 1)) 50%,
-      to(rgba(0, 0, 0, 0))
-    );
-    mask-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 50%,
-      rgba(0, 0, 0, 0)
-    );
+    vertical-align: bottom;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  #banner div {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1285px) {
   #banner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 0;
 
-    &>div{
-      margin-top: 6vh;
+    & > div {
+      margin-top: 20vh;
     }
 
-    &>img{
+    & > img {
+      margin-top: 10vh;
       width: 100%;
     }
   }
