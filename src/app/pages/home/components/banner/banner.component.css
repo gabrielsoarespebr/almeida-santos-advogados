@@ -14,11 +14,8 @@
     height: 70vh;
   }
 
-  & img {
-    width: 50vw;
-    object-fit: contain;
-
-    vertical-align: bottom;
+  & > img {
+    width: 40vw;
   }
 }
 
@@ -32,7 +29,7 @@
     }
 
     & > img {
-      margin-top: 10vh;
+      margin-top: 14vh;
       width: 100%;
     }
   }

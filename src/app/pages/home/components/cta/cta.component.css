@@ -13,31 +13,22 @@
   & img {
     object-fit: cover;
 
-    width: 30vw;
+    width: 27vw;
+    margin-bottom: 6vh;
+
+    border: 3px solid var(--colorPrimary);
+
     border-radius: var(--borderRounded);
 
-    border: 0.15rem solid var(--colorPrimary);
+    box-shadow: 0 0 20px var(--colorPrimary);
+  }
 
-    -webkit-mask-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 1)) 50%,
-      to(rgba(0, 0, 0, 0))
-    );
-    mask-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 50%,
-      rgba(0, 0, 0, 0)
-    );
+  & li {
+    background-color: var(--colorSecondary);
 
-    & li {
-      background-color: var(--colorSecondary);
+    padding: 0.4rem 0.6rem;
 
-      padding: 0.4rem 0.6rem;
-
-      border-radius: var(--borderRounded);
-    }
+    border-radius: var(--borderRounded);
   }
 }
 
@@ -53,7 +44,7 @@
     & img {
       width: 60%;
 
-      margin: auto;
+      margin: 3vh auto 6vh auto;
     }
   }
 }
