@@ -25,11 +25,11 @@
     gap: 0;
 
     & > div {
-      margin-top: 20vh;
+      margin-top: 29vh;
     }
 
     & > img {
-      margin-top: 14vh;
+      margin-top: 20vh;
       width: 100%;
     }
   }
