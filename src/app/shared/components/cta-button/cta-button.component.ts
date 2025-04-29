@@ -1,3 +1,4 @@
+import { ChatService } from './../../../services/chat.service';
 import { Component,Input } from '@angular/core';
 
 @Component({
@@ -9,4 +10,10 @@ import { Component,Input } from '@angular/core';
 })
 export class CtaButtonComponent {
   @Input() buttonText!: string;
+
+  constructor(private chatService: ChatService) {}
+
+  showChat() {
+    this.chatService.showChat();
+  }
 }

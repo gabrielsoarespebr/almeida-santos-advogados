@@ -1,10 +1,9 @@
-<a
+<button
   class="text-uppercase d-flex justify-content-center align-items-center gap-2"
-  href="https://api.whatsapp.com/send/?phone=558173400912&text&type=phone_number&app_absent=0"
-  target="_blank"
   aria-label="Entrar em contato pelo WhatsApp"
   title="Entrar em contato pelo WhatsApp"
+  (click)="showChat()"
 >
   <i class="fa-brands fa-whatsapp"></i>
   <p class="m-0">{{ buttonText }}</p>
-</a>
+</button>

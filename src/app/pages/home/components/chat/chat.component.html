@@ -1,0 +1,94 @@
+<div id="chat" [ngStyle]="{ bottom: isChatVisible ? '0' : '-80vh' }">
+  <div id="chatHead" class="d-flex align-items-center gap-2">
+    <img
+      rel="preload"
+      src="../../../../../assets/images/favicon.png"
+      alt="Logotipo Almeida Santos Advogados"
+    />
+    <div>
+      <p class="fw-bold">
+        Escritório Especializado em Concurso Público - Almeida Santos
+        Advogados
+      </p>
+      <p>online</p>
+    </div>
+    <i
+      class="fa-solid fa-xmark"
+      style="cursor: pointer"
+      (click)="hideChat()"
+    ></i>
+  </div>
+  <div id="chatBody">
+    <div class="chatMessage" *ngIf="!formSubmitted">
+      <p>Olá!</p>
+      <p>Meu nome é Ana, é um prazer te atender!</p>
+      <p>
+        Para tornar seu atendimento ainda mais <b>personalizado</b>, informe os
+        dados abaixo.
+      </p>
+      <p>
+        Após o preenchimento, clique em <b>"Iniciar conversa"</b> para falar com
+        nosso <b>advogado especializado</b> pelo WhatsApp.
+      </p>
+    </div>
+    <div class="chatMessage" *ngIf="formSubmitted">
+      <p>Pronto!</p>
+      <p>Tudo certo!</p>
+      <p>
+        Caso não tenha sido redirecionado para o WhatsApp,
+        <b>clique no botão abaixo</b>.
+      </p>
+    </div>
+    <div class="d-flex flex-column justify-content-end">
+      <form *ngIf="!formSubmitted">
+        <div>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" [(ngModel)]="name" />
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" [(ngModel)]="email" />
+        </div>
+        <div>
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" name="phone" [(ngModel)]="phone" />
+        </div>
+        <div>
+          <label for="state">Estado:</label>
+          <select name="state" id="state" [(ngModel)]="state">
+            <option *ngFor="let state of brazilStateList" [value]="state">
+              {{ state }}
+            </option>
+          </select>
+        </div>
+        <div>
+          <label for="referralSource">Como nos conheceu?</label>
+          <select
+            name="referralSource"
+            id="referralSource"
+            [(ngModel)]="referralSource"
+          >
+            <option value="Google">Google</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Indicação">Indicação</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+      </form>
+      <button
+        (click)="submitToSheet()"
+        class="whatsappRedirect"
+        *ngIf="!formSubmitted"
+      >
+        Iniciar conversa
+      </button>
+      <a
+        [href]="linkWithCustomMessage"
+        target="_blank"
+        class="whatsappRedirect"
+        *ngIf="formSubmitted"
+        >WhatsApp</a
+      >
+    </div>
+  </div>
+</div>

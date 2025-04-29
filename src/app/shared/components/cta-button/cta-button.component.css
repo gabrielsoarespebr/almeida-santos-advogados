@@ -1,4 +1,4 @@
-a {
+button {
   width: fit-content;
 
   margin: auto;
@@ -8,6 +8,7 @@ a {
 
   padding: 0.7rem 3.5rem;
 
+  border: none;
   border-radius: var(--borderRounded) 0 var(--borderRounded) 0;
 
   text-decoration: none;
@@ -33,7 +34,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  a {
+  button {
     padding: 0.7rem 1.5rem;
 
     justify-content: space-between;

@@ -10,6 +10,8 @@ import { FaqComponent } from './components/faq/faq.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsComponent } from './components/news/news.component';
 import { WarningComponent } from './components/warning/warning.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { ChatService } from '../../services/chat.service';
 
 @Component({
   selector: 'app-home',
@@ -26,8 +28,15 @@ import { WarningComponent } from './components/warning/warning.component';
     FooterComponent,
     NewsComponent,
     WarningComponent,
+    ChatComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  constructor(private chatService: ChatService) {}
+
+  showChat() {
+    this.chatService.showChat();
+  }
+}
