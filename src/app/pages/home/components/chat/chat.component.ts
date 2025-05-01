@@ -47,6 +47,8 @@ Olá, tudo bem? Gostaria de obter mais informações sobre os serviços jurídic
   }
 
   submitToSheet() {
+    window.open(this.linkWithCustomMessage, '_blank');
+
     const payload = {
       name: this.name,
       email: this.email,
@@ -67,7 +69,6 @@ Olá, tudo bem? Gostaria de obter mais informações sobre os serviços jurídic
       }
     )
       .then((res) => {
-        window.open(this.linkWithCustomMessage, '_blank');
         console.log('Enviado com sucesso');
         this.formSubmitted = !this.formSubmitted;
       })
