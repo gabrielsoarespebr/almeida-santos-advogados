@@ -7,8 +7,7 @@
     />
     <div>
       <p class="fw-bold">
-        Escritório Especializado em Concurso Público - Almeida Santos
-        Advogados
+        Escritório Especializado em Concurso Público - Almeida Santos Advogados
       </p>
       <p>online</p>
     </div>
@@ -42,53 +41,128 @@
     <div class="d-flex flex-column justify-content-end">
       <form *ngIf="!formSubmitted">
         <div>
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" [(ngModel)]="name" />
-        </div>
-        <div>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" [(ngModel)]="email" />
-        </div>
-        <div>
-          <label for="phone">Telefone:</label>
-          <input type="tel" id="phone" name="phone" [(ngModel)]="phone" />
-        </div>
-        <div>
-          <label for="state">Estado:</label>
-          <select name="state" id="state" [(ngModel)]="state">
-            <option *ngFor="let state of brazilStateList" [value]="state">
-              {{ state }}
-            </option>
-          </select>
-        </div>
-        <div>
-          <label for="referralSource">Como nos conheceu?</label>
-          <select
-            name="referralSource"
-            id="referralSource"
-            [(ngModel)]="referralSource"
+          <div>
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              [(ngModel)]="name"
+              required
+              #nameModel="ngModel"
+            />
+          </div>
+          <div
+            class="formFieldInvalid"
+            *ngIf="nameModel.touched && nameModel.invalid"
           >
-            <option value="Google">Google</option>
-            <option value="Instagram">Instagram</option>
-            <option value="Indicação">Indicação</option>
-            <option value="Outro">Outro</option>
-          </select>
+            <div class="d-flex align-items-center gap-1">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Nome é obrigatório.</p>
+            </div>
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              [(ngModel)]="email"
+              required
+              email
+              #emailModel="ngModel"
+            />
+          </div>
+          <div
+            class="formFieldInvalid"
+            *ngIf="emailModel.touched && emailModel.invalid"
+          >
+            <div
+              class="d-flex align-items-center gap-1"
+              *ngIf="emailModel.errors?.['required']"
+            >
+              <i class="fa-solid fa-circle-info"></i>
+              <p>E-mail é obrigatório.</p>
+            </div>
+            <div
+              class="d-flex align-items-center gap-1"
+              *ngIf="emailModel.errors?.['email']"
+            >
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Formato inválido.</p>
+            </div>
+          </div>
+          <div>
+            <label for="phone">Telefone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              [(ngModel)]="phone"
+              required
+              pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$"
+              #phoneModel="ngModel"
+            />
+          </div>
+          <div
+            class="formFieldInvalid"
+            *ngIf="phoneModel.touched && phoneModel.invalid"
+          >
+            <div
+              class="d-flex align-items-center gap-1"
+              *ngIf="phoneModel.errors?.['required']"
+            >
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Telefone é obrigatório.</p>
+            </div>
+            <div
+              class="d-flex align-items-center gap-1"
+              *ngIf="phoneModel.errors?.['pattern']"
+            >
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Formato inválido.</p>
+            </div>
+          </div>
+          <div>
+            <label for="state">Estado:</label>
+            <select name="state" id="state" [(ngModel)]="state">
+              <option *ngFor="let state of brazilStateList" [value]="state">
+                {{ state }}
+              </option>
+            </select>
+          </div>
+          <div>
+            <label for="referralSource">Como nos conheceu?</label>
+            <select
+              name="referralSource"
+              id="referralSource"
+              [(ngModel)]="referralSource"
+            >
+              <option value="Google">Google</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Indicação">Indicação</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
         </div>
+        <button
+          (click)="submitToSheet()"
+          class="whatsappRedirect"
+          *ngIf="!formSubmitted"
+          [disabled]="
+            nameModel.invalid || emailModel.invalid || phoneModel.invalid
+          "
+        >
+          Iniciar conversa
+        </button>
+        <a
+          [href]="linkWithCustomMessage"
+          target="_blank"
+          class="whatsappRedirect"
+          *ngIf="formSubmitted"
+          >WhatsApp</a
+        >
       </form>
-      <button
-        (click)="submitToSheet()"
-        class="whatsappRedirect"
-        *ngIf="!formSubmitted"
-      >
-        Iniciar conversa
-      </button>
-      <a
-        [href]="linkWithCustomMessage"
-        target="_blank"
-        class="whatsappRedirect"
-        *ngIf="formSubmitted"
-        >WhatsApp</a
-      >
     </div>
   </div>
 </div>

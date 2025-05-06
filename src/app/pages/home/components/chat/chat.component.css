@@ -17,6 +17,12 @@
   p {
     margin: 0;
   }
+
+  .formFieldInvalid{
+    color: #fd3d31;
+    font-size: 90%;
+    font-weight: bold;
+  }
 }
 
 #chatHead {
@@ -54,7 +60,7 @@
   }
 }
 
-form {
+form>div {
   margin: 0 0.7rem 1rem 7rem;
   padding: 0.7rem;
 
@@ -80,8 +86,7 @@ form {
 .whatsappRedirect {
   padding: 0.7rem;
 
-  margin-left: auto;
-  margin-right: 0.7rem;
+  margin-left: 65%;
 
   border-radius: 0.2rem;
 
@@ -101,10 +106,18 @@ form {
   #chat {
     width: 70vw;
   }
+
+  .whatsappRedirect {
+    margin-left: 75%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   #chat {
     width: 90vw;
+  }
+
+  .whatsappRedirect {
+    margin-left: 55%;
   }
 }
