@@ -125,11 +125,26 @@
           </div>
           <div>
             <label for="state">Estado:</label>
-            <select name="state" id="state" [(ngModel)]="state">
+            <select
+              name="state"
+              id="state"
+              [(ngModel)]="state"
+              required
+              #stateModel="ngModel"
+            >
               <option *ngFor="let state of brazilStateList" [value]="state">
                 {{ state }}
               </option>
             </select>
+          </div>
+          <div
+            class="formFieldInvalid"
+            *ngIf="stateModel.touched && stateModel.invalid"
+          >
+            <div class="d-flex align-items-center gap-1">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Campo obrigatório.</p>
+            </div>
           </div>
           <div>
             <label for="referralSource">Como nos conheceu?</label>
@@ -137,6 +152,8 @@
               name="referralSource"
               id="referralSource"
               [(ngModel)]="referralSource"
+              required
+              #referralSourceModel="ngModel"
             >
               <option value="Google">Google</option>
               <option value="Instagram">Instagram</option>
@@ -144,12 +161,25 @@
               <option value="Outro">Outro</option>
             </select>
           </div>
+          <div
+            class="formFieldInvalid"
+            *ngIf="referralSourceModel.touched && referralSourceModel.invalid"
+          >
+            <div class="d-flex align-items-center gap-1">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Campo obrigatório.</p>
+            </div>
+          </div>
         </div>
         <button
           (click)="submitToSheet()"
           class="whatsappRedirect"
           [disabled]="
-            nameModel.invalid || emailModel.invalid || phoneModel.invalid
+            nameModel.invalid ||
+            emailModel.invalid ||
+            phoneModel.invalid ||
+            stateModel.invalid ||
+            referralSourceModel.invalid
           "
         >
           Iniciar conversa
