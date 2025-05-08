@@ -148,21 +148,20 @@
         <button
           (click)="submitToSheet()"
           class="whatsappRedirect"
-          *ngIf="!formSubmitted"
           [disabled]="
             nameModel.invalid || emailModel.invalid || phoneModel.invalid
           "
         >
           Iniciar conversa
         </button>
-        <a
-          [href]="linkWithCustomMessage"
-          target="_blank"
-          class="whatsappRedirect"
-          *ngIf="formSubmitted"
-          >WhatsApp</a
-        >
       </form>
+      <a
+        [href]="linkWithCustomMessage"
+        target="_blank"
+        class="whatsappRedirect"
+        *ngIf="formSubmitted"
+        >WhatsApp</a
+      >
     </div>
   </div>
 </div>
