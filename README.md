@@ -33,7 +33,7 @@ Primeiramente, garanta que o Angular e o npm estão instalados no seu computador
 Em seguida, clone o repositório:
 
 ```bash
-git clone https://github.com/gabrielsoarespebr/vera-alencar-psicologia.git
+git clone git@github.com:gabrielsoarespebr/almeida-santos-advogados.git
 ```
 
 Abra o terminal e instale as dependências:
