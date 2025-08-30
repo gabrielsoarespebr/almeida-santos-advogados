@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /assets/
+Allow: /
+
+Sitemap: https://www.almeidasantosconcurso.com.br/sitemap.xml
