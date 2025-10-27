@@ -18,7 +18,7 @@
     margin: 0;
   }
 
-  .formFieldInvalid{
+  .formFieldInvalid {
     color: #fd3d31;
     font-size: 90%;
     font-weight: bold;
@@ -38,7 +38,7 @@
 }
 
 #chatBody {
-  background: url("../../../../../assets/images/whatsappBackground.png");
+  background: url("../../../../assets/images/whatsappBackground.png");
 
   padding-top: 0.7rem;
   padding-bottom: 1rem;
@@ -60,7 +60,7 @@
   }
 }
 
-form>div {
+form > div {
   margin: 0 0.7rem 1rem 7rem;
   padding: 0.7rem;
 

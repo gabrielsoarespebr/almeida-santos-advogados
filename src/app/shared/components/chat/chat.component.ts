@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { BrazilStateEnum } from '../../../../shared/enums/BrazilStateEnum';
+import { BrazilStateEnum } from '../../enums/BrazilStateEnum';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ChatService } from '../../../../services/chat.service';
+import { ChatService } from '../../../services/chat.service';
 
 @Component({
   selector: 'app-chat',
