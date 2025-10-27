@@ -1,0 +1,75 @@
+#banner {
+  margin-top: -10vh;
+
+  padding-bottom: 0;
+  padding-top: 10vh;
+  background-image: url("../../../../../assets/images/blogBackground.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  gap: 3vw;
+
+  & > div {
+    height: 40dvh;
+  }
+
+  & .sectionTitle{
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  #banner {
+    flex-direction: column;
+    gap: 0;
+
+    & > div {
+      margin-top: 8dvh;
+    }
+  }
+}
+
+#whatsappFixedIcon {
+  position: fixed;
+
+  width: 6rem;
+  height: 6rem;
+
+  right: 2.1rem;
+  bottom: 1.4rem;
+
+  font-size: 3.5rem;
+
+  color: white;
+
+  background-color: #25d366;
+
+  border-radius: 50%;
+
+  filter: drop-shadow(0 0 7px rgb(104, 104, 104));
+
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    background-color: #22bf5b;
+
+    transform: scale(1.1);
+  }
+}
+
+#whatsappFixedIcon:after {
+  content: "1";
+  background-color: #fd3d31;
+
+  border-radius: 50%;
+
+  padding: 0.4rem 0.8rem;
+
+  font-size: 25%;
+
+  position: absolute;
+
+  top: -0.8vh;
+  right: -0.8vw;
+}

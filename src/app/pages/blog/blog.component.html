@@ -1,0 +1,37 @@
+<app-header></app-header>
+<app-banner></app-banner>
+<app-divider></app-divider>
+<ul
+  *ngIf="blogPostList$ | async as blogPostList; else loading"
+  id="blog-post-list"
+>
+  <li *ngFor="let blogPost of blogPostList" class="blog-post">
+    <a
+      [routerLink]="['/blog', blogPost.urlPath]"
+      class="text-reset text-decoration-none"
+    >
+      <img [src]="blogPost.imgUrl" [alt]="blogPost.title" loading="lazy" />
+      <div>
+        <h2>{{ blogPost.title }}</h2>
+        <p>por {{ blogPost.author }} em {{ blogPost.date }}</p>
+        <p>{{ blogPost.textPreview }}</p>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<ng-template #loading>
+  <p>Carregando publicações...</p>
+</ng-template>
+<app-divider></app-divider>
+<app-footer></app-footer>
+<app-chat></app-chat>
+
+<button
+  aria-label="Entrar em contato pelo WhatsApp"
+  title="Entrar em contato pelo WhatsApp"
+  (click)="showChat()"
+  id="whatsappFixedIcon"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</button>

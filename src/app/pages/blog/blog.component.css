@@ -1,0 +1,99 @@
+#blog-post-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  padding: 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  background-color: var(--colorOctary);
+}
+
+.blog-post {
+  width: 28dvw;
+  height: 70dvh;
+  background-color: white;
+
+  border-radius: var(--borderRounded);
+
+  filter: drop-shadow(0 0 10px #dddddd);
+
+  transition-duration: 1s;
+
+  & img {
+    width: 100%;
+
+    border-radius: var(--borderRounded) var(--borderRounded) 0 0;
+  }
+
+  & div {
+    padding: 0.5rem;
+
+    & > h2 {
+      font-weight: bold;
+    }
+
+    & > p:first-of-type {
+      color: #8a8989;
+    }
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 10px #c2c2c2);
+    scale: 1.02;
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  .blog-post {
+    width: 70vw;
+  }
+}
+
+#whatsappFixedIcon {
+  position: fixed;
+
+  width: 6rem;
+  height: 6rem;
+
+  right: 2.1rem;
+  bottom: 1.4rem;
+
+  font-size: 3.5rem;
+
+  color: white;
+
+  background-color: #25d366;
+
+  border-radius: 50%;
+
+  filter: drop-shadow(0 0 7px rgb(104, 104, 104));
+
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    background-color: #22bf5b;
+
+    transform: scale(1.1);
+  }
+}
+
+#whatsappFixedIcon:after {
+  content: "1";
+  background-color: #fd3d31;
+
+  border-radius: 50%;
+
+  padding: 0.4rem 0.8rem;
+
+  font-size: 25%;
+
+  position: absolute;
+
+  top: -0.8vh;
+  right: -0.8vw;
+}

@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div *ngIf="post$ | async as post; else loading">
+  <div
+    id="banner"
+    class="text-white d-flex justify-content-between align-items-end px-5"
+  >
+    <div class="mb-5 d-flex flex-column justify-content-center">
+      <h2 class="sectionTitle">{{ post.title }}</h2>
+      <hr class="titleHr" />
+    </div>
+  </div>
+  <div class="p-5">
+    <h1 class="text-center">{{ post.title }}</h1>
+    <p class="text-center small text-secondary mb-5">por {{ post.author }} em {{ post.date }}</p>
+    <p [innerHTML]="post.content"></p>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p>Carregando artigo...</p>
+</ng-template>
+<app-footer></app-footer>
+<app-chat></app-chat>
+
+<button
+  aria-label="Entrar em contato pelo WhatsApp"
+  title="Entrar em contato pelo WhatsApp"
+  (click)="showChat()"
+  id="whatsappFixedIcon"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</button>

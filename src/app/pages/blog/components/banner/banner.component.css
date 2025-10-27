@@ -1,0 +1,27 @@
+#banner {
+  margin-top: -10vh;
+
+  padding-bottom: 0;
+  padding-top: 10vh;
+  background-image: url("../../../../../assets/images/blogBackground.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  gap: 3vw;
+
+  & > div {
+    height: 40dvh;
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  #banner {
+    flex-direction: column;
+    gap: 0;
+
+    & > div {
+      margin-top: 8dvh;
+    }
+  }
+}
