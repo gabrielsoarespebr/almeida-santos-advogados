@@ -14,20 +14,13 @@
     height: 40dvh;
   }
 
-  & .sectionTitle{
+  & .sectionTitle {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (max-width: 1285px) {
-  #banner {
-    flex-direction: column;
-    gap: 0;
-
-    & > div {
-      margin-top: 8dvh;
-    }
-  }
+#blog-post {
+  padding: 5rem 22rem;
 }
 
 #whatsappFixedIcon {
@@ -72,4 +65,19 @@
 
   top: -0.8vh;
   right: -0.8vw;
+}
+
+@media screen and (max-width: 1285px) {
+  #banner {
+    flex-direction: column;
+    gap: 0;
+
+    & > div {
+      margin-top: 8dvh;
+    }
+  }
+
+  #blog-post {
+    padding: 3rem;
+  }
 }
