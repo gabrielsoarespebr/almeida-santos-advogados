@@ -5,16 +5,16 @@
   padding: 3rem;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
 
   background-color: var(--colorOctary);
 }
 
 .blog-post {
-  width: 28dvw;
+  width: 29.5dvw;
   min-height: 70dvh;
 
   background-color: white;
