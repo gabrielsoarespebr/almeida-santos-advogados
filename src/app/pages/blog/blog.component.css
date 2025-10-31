@@ -15,7 +15,8 @@
 
 .blog-post {
   width: 28dvw;
-  height: 70dvh;
+  min-height: 70dvh;
+
   background-color: white;
 
   border-radius: var(--borderRounded);
@@ -50,7 +51,8 @@
 
 @media screen and (max-width: 1285px) {
   .blog-post {
-    width: 70vw;
+    width: 70dvw;
+    min-height: 50dvh;
   }
 }
 
