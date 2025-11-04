@@ -45,8 +45,8 @@
     }
 
     & img {
-      width: 18dvw;
-      height: 18dvw;
+      width: 12dvw;
+      height: 12dvw;
 
       border-radius: var(--borderRounded);
     }
@@ -109,5 +109,21 @@
 
   #blog-post {
     padding: 3rem;
+
+    & #author-info-container img {
+      width: 18dvw;
+      height: 18dvw;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #blog-post #author-info-container {
+    padding: 0 1rem;
+
+    & img {
+      width: 60dvw;
+      height: 60dvw;
+    }
   }
 }
