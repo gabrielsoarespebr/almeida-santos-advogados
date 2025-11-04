@@ -21,6 +21,36 @@
 
 #blog-post {
   padding: 5rem 22rem;
+
+  & #law-divider {
+    color: var(--colorPrimary);
+
+    & > hr {
+      border: none;
+
+      height: 2px;
+
+      background-color: var(--colorPrimary);
+      opacity: 1;
+    }
+  }
+
+  & #author-info-container {
+    & #author-info-name {
+      font-weight: bold;
+    }
+
+    & #author-info-description {
+      font-size: 80%;
+    }
+
+    & img {
+      width: 18dvw;
+      height: 18dvw;
+
+      border-radius: var(--borderRounded);
+    }
+  }
 }
 
 #whatsappFixedIcon {

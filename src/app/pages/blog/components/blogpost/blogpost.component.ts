@@ -8,15 +8,25 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { BlogPost } from '../../blog.component';
 import { ChatComponent } from '../../../../shared/components/chat/chat.component';
+import { Author, authorList } from '../../../../data/blog/authorList';
+import { DividerComponent } from '../../../../shared/components/divider/divider.component';
 
 @Component({
   selector: 'app-blogpost',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, ChatComponent, CommonModule],
+  imports: [
+    HeaderComponent,
+    FooterComponent,
+    ChatComponent,
+    CommonModule,
+    DividerComponent,
+  ],
   templateUrl: './blogpost.component.html',
   styleUrl: './blogpost.component.css',
 })
 export class BlogpostComponent {
+  authorList: Author[] = authorList;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -39,6 +49,13 @@ export class BlogpostComponent {
         );
     })
   );
+
+  getAuthor(post: BlogPost): Author | undefined {
+    return (
+      this.authorList.find((author) => post.author.includes(author.name)) ||
+      this.authorList.find((author) => author.name === 'Outro')
+    );
+  }
 
   showChat() {
     this.chatService.showChat();
