@@ -30,6 +30,12 @@ export class BlogService {
             visible: row[8],
           }))
           .filter((e: BlogPost) => e.visible === 'sim')
+          .sort((a: BlogPost, b: BlogPost) =>
+            b.date.split('/').reverse().join('') >
+            a.date.split('/').reverse().join('')
+              ? 1
+              : -1
+          )
       )
     );
   }
