@@ -18,7 +18,7 @@ Site de escritório de advocacia especializado em concursos públicos. Single Pa
 
 ## Links
 
-- [Site (Opção 1)](https://www.almeiidasantos.com.br)
+- [Site (Opção 1)](https://www.almeidasantosconcurso.com.br)
 - [Site (Opção 2)](https://almeidasantosadvogados.vercel.app)
 - [GitHub](https://github.com/gabrielsoarespebr/almeida-santos-advogados)
 
