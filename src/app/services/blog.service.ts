@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs';
+import { BlogPost } from '../pages/blog/blog.component';
 
 @Injectable({
   providedIn: 'root',
@@ -16,17 +17,19 @@ export class BlogService {
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${this.spreadsheetId}/values/${this.range}?key=${this.apiKey}`;
     return this.http.get<any>(url).pipe(
       map((res) =>
-        res.values.map((row: string[]) => ({
-          title: row[0],
-          urlPath: row[1],
-          imgUrl: row[2],
-          textPreview: row[3],
-          content: row[4],
-          date: row[5],
-          author: row[6],
-          tags: row[7],
-          visible: row[8],
-        }))
+        res.values
+          .map((row: string[]) => ({
+            title: row[0],
+            urlPath: row[1],
+            imgUrl: row[2],
+            textPreview: row[3],
+            content: row[4],
+            date: row[5],
+            author: row[6],
+            tags: row[7],
+            visible: row[8],
+          }))
+          .filter((e: BlogPost) => e.visible === 'sim')
       )
     );
   }
