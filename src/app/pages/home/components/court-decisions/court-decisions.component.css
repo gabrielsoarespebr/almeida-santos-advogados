@@ -1,0 +1,69 @@
+#courtDecisionsSection {
+  background-color: var(--colorTertiary);
+
+  & > div {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 6dvh;
+
+    & img {
+      width: 40dvw;
+
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #courtDecisionsSection a img {
+    height: 32dvh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #courtDecisionsSection div {
+    flex-direction: column;
+    gap: 4dvh;
+
+    & img {
+      height: auto;
+      width: 80%;
+
+      cursor: pointer;
+
+      margin: auto;
+    }
+  }
+}
+
+.decisions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.decisions-grid img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* MODAL */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-image {
+  max-width: 90dvw;
+  min-width: 50dvw;
+  max-height: 90dvh;
+  border-radius: 4px;
+}

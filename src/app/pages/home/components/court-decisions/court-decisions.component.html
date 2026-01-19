@@ -1,0 +1,31 @@
+<section id="courtDecisionsSection" class="p-5 text-white">
+  <h2 class="sectionTitle">Resultados reais em concursos públicos</h2>
+  <hr class="titleHr" />
+
+  <p class="my-5">
+    Reunimos
+    <span class="textHighlight">resultados reais com decisões favoráveis</span>,
+    alcançadas por meio de atuação jurídica especializada, assegurando a
+    legalidade dos certames.
+  </p>
+
+  <div class="decisions-grid mb-5">
+    <img
+      *ngFor="let img of courtDecisions"
+      [src]="img"
+      loading="lazy"
+      alt="Decisão judicial"
+      (click)="open(img)"
+    />
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-backdrop" *ngIf="isOpen" (click)="close()">
+  <img
+    class="modal-image"
+    [src]="currentImage"
+    alt="Decisão judicial ampliada"
+    (click)="$event.stopPropagation()"
+  />
+</div>

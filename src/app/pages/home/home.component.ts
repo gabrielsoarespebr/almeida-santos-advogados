@@ -12,6 +12,7 @@ import { NewsComponent } from './components/news/news.component';
 import { WarningComponent } from './components/warning/warning.component';
 import { ChatComponent } from '../../shared/components/chat/chat.component';
 import { ChatService } from '../../services/chat.service';
+import { CourtDecisionsComponent } from './components/court-decisions/court-decisions.component';
 
 @Component({
   selector: 'app-home',
@@ -28,7 +29,8 @@ import { ChatService } from '../../services/chat.service';
     FooterComponent,
     NewsComponent,
     WarningComponent,
-    ChatComponent
+    ChatComponent,
+    CourtDecisionsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
